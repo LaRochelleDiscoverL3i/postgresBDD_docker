@@ -1,0 +1,8 @@
+ -Modification de la bdd: 
+ ajout catégorie question qui est une énumération : 
+ 		projet : qui travaille sur ce projet ?
+		creation: qui a fait quoi?	
+		collaboration : qui travaille avec qui?
+	 	auteur : qui a écrit l'article?
+ -supression de la clé étrangére au niveau de Reponse 
+-Peupler la table question mais pas avec toutes les infos, on mettra à jour au fur et à mesure 
