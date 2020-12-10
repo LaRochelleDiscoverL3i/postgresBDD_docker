@@ -13,6 +13,7 @@ Image :
 
 ## Lancement
 A la racine du projet :
+
 ```batch
 docker-compose up
 ```
