@@ -14,7 +14,7 @@ CREATE TYPE categorie AS ENUM ('collaboration', 'auteur', 'projet', 'creation');
 
 
 CREATE TABLE IF NOT EXISTS Joueur  (
-   IdJoueur serial PRIMARY KEY,
+   IdJoueur VARCHAR(50) PRIMARY KEY,
    Score  INT,
    Temps_test TIMESTAMP,
    level_game INT
@@ -38,11 +38,9 @@ CREATE TABLE IF NOT EXISTS Question  (
 
 
 
-
-
 CREATE TABLE IF NOT EXISTS Question_joueur  (
    IdQuestion serial NOT NULL ,
-   IdJoueur serial NOT NULL ,
+   IdJoueur VARCHAR(50) NOT NULL ,
     PRIMARY KEY (IdQuestion,   IdJoueur),
    Nbre_tentative INT,
    booleen boolean, 
@@ -54,7 +52,7 @@ CREATE TABLE IF NOT EXISTS Question_joueur  (
 
 
 CREATE TABLE IF NOT EXISTS Scan_Joueur  (
-   IdJoueur serial NOT NULL,
+   IdJoueur VARCHAR(50) NOT NULL,
    IdReponse serial NOT NULL,
    IdQuestion serial NOT NULL,
    primary key (IdJoueur, IdReponse, IdQuestion),
